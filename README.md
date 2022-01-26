@@ -1,2 +1,8 @@
 # HW-LESSON-4
-The figure with using the position CSS property.
+
+## Done:
+
+1. The figure using the position CSS property;
+2. Used CSS pseudo-class :hover.
+
+## [DEMO](https://evgenywas.github.io/HW-LESSON-4/)
