@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.figure {
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+
+.circle {
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+    background: #ec220a;
+}
+
+.circle--one {
+    position: absolute;
+    z-index: 5;
+}
+
+.circle--two {
+    position: absolute;
+    left: 100%;
+    transform: translate(-100%, 0);
+    z-index: 5;
+}
+
+.circle--three {
+    position: absolute;
+    top: 100%;
+    transform: translate(0, -100%);
+    z-index: 5;
+}
+
+.circle--four {
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    transform: translate(-100%, -100%);
+    z-index: 5;
+}
+
+.circle--one:hover {
+    z-index: 15;
+    background: coral;
+    transition: 0.3s ease-out;
+}
+
+.circle--two:hover {
+    z-index: 15;
+    background: fuchsia;
+    transition: 0.3s ease-out;
+}
+
+.circle--three:hover {
+    z-index: 15;
+    background: greenyellow;
+    transition: 0.3s ease-out;
+}
+
+.circle--four:hover {
+    z-index: 15;
+    background: grey;
+    transition: 0.3s ease-out;
+}
+
+.rectangle-big {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    z-index: 10;
+    width: 70%;
+    height: 70%;
+    background: #01a1ff;
+}
+
+.rectangle-big:hover {
+    z-index: 20;
+    background: #E6E6FA;
+    transition: 0.3s ease-out;
+}
+
+.rectangle-small {
+    position: absolute;
+    width: 35%;
+    height: 35%;
+    transform: translate(95%, 95%);
+    z-index: 15;
+    border-radius: 10%;
+    background: #f7ba00;
+}
+
+
+@media (max-width: 768px) {
+    .figure {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 568px) {
+    .figure {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 375px) {
+    .figure {
+        width: 200px;
+        height: 200px;
+    }
+}
