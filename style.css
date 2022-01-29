@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.figure {
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+
+.circle {
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+    background: #ec220a;
+}
+
+.circle--top-left {
+    z-index: 5;
+}
+
+.circle--top-right {
+    left: 100%;
+    transform: translate(-100%, 0);
+    z-index: 5;
+}
+
+.circle--bottom-left {
+    top: 100%;
+    transform: translate(0, -100%);
+    z-index: 5;
+}
+
+.circle--bottom-right {
+    top: 100%;
+    left: 100%;
+    transform: translate(-100%, -100%);
+    z-index: 5;
+}
+
+.circle:hover {
+    z-index: 15;
+    transition: 0.3s ease-out;
+}
+
+.circle--top-left:hover {
+    background: coral;
+}
+
+.circle--top-right:hover {
+    background: fuchsia;
+}
+
+.circle--bottom-left:hover {
+    background: greenyellow;
+}
+
+.circle--bottom-right:hover {
+    background: grey;
+}
+
+.rectangle-big {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    z-index: 10;
+    width: 70%;
+    height: 70%;
+    background: #01a1ff;
+}
+
+.rectangle-big:hover {
+    z-index: 20;
+    background: #E6E6FA;
+    transition: 0.3s ease-out;
+}
+
+.rectangle-small {
+    position: absolute;
+    width: 35%;
+    height: 35%;
+    transform: translate(95%, 95%);
+    z-index: 15;
+    border-radius: 10%;
+    background: #f7ba00;
+}
+
+@media (max-width: 768px) {
+    .figure {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 568px) {
+    .figure {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 375px) {
+    .figure {
+        width: 200px;
+        height: 200px;
+    }
+}
