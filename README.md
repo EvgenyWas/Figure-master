@@ -1,4 +1,4 @@
-# HW-LESSON-4
+# Figure master
 
 ## Done:
 
